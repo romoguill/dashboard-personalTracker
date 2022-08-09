@@ -90,3 +90,18 @@ button {
   cursor: pointer;
   text-align: left;
 }
+
+html {
+  font-family: var(--ff-vietnam);
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-block-start: 72px;
+  background-color: var(--cultured);
+}
+
+:focus-visible {
+  outline: 2px solid var(--onyx);
+  outline-offset: 1px;
+}
