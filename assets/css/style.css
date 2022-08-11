@@ -232,3 +232,23 @@ body {
 .header-profile:is(:hover, :focus) {
   background: var(--black_08);
 }
+
+/* HOME */
+.article.container {
+  padding: 20px 14px;
+}
+
+.home {
+  display: grid;
+  gap: 25px;
+}
+
+.article-title {
+  margin-bottom: 10px;
+}
+
+.article-subtitle {
+  color: var(--davys-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+}
