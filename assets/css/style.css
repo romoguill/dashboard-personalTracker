@@ -191,7 +191,7 @@ body {
 
 .card-divider {
   --bg: var(--black_12);
-  --mb: 3px;
+  --mb: 25px;
 }
 /* HEADER */
 
@@ -330,6 +330,7 @@ body {
   color: var(--davys-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-500);
+  margin-bottom: 25px;
 }
 
 .profile-card-wrapper {
@@ -367,6 +368,7 @@ body {
   align-items: center;
   gap: 5px;
   font-size: var(--fs-7);
+  color: var(--cool-gray);
 }
 
 .progress-item:not(:last-child) {
