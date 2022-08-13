@@ -406,3 +406,47 @@ body {
   height: 100%;
   background-color: var(--bg, var(--onyx));
 }
+
+.home .card-wrapper {
+  display: grid;
+  gap: 25px;
+}
+
+.home .task-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.home .task-card .card-icon.green {
+  --background: var(--emerald_12);
+  --color: var(--emerald);
+}
+
+.home .task-card .card-icon.blue {
+  --background: var(--pacific-blue_12);
+  --color: var(--pacific-blue);
+}
+
+.home .task-card .icon {
+  font-size: 28px;
+  color: var(--color);
+}
+
+.home .task-card .card-icon {
+  background-color: var(--background);
+  padding: 10px;
+  border-radius: var(--radius-6);
+}
+
+.home .task-card .card-data {
+  color: var(--onyx-2);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  margin-bottom: 5px;
+}
+
+.home .task-card .card-text {
+  color: var(--cool-gray);
+  font-size: var(--fs-6);
+}
