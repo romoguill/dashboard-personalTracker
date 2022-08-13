@@ -450,3 +450,52 @@ body {
   color: var(--cool-gray);
   font-size: var(--fs-6);
 }
+
+.revenue-card .card-title {
+  margin-bottom: 15px;
+}
+
+.card-price {
+  color: var(--onyx);
+  font-size: var(--fs-2);
+  font-weight: 12px;
+}
+
+.revenue-card .card-text {
+  color: var(--cool-gray);
+  font-size: var(--fs-6);
+}
+
+.revenue-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.revenue-item:first-child {
+  margin-bottom: 10px;
+}
+
+.revenue-item .icon {
+  font-size: 30px;
+}
+
+.revenue-item .icon.green {
+  color: var(--emerald);
+}
+
+.revenue-item .icon.red {
+  color: var(--imperial-red);
+}
+
+.revenue-item-data {
+  color: var(--onyx);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  margin-bottom: 5px;
+}
+
+.revenue-item-text {
+  color: var(--cool-gray);
+  font-size: var(--fs-9);
+}
