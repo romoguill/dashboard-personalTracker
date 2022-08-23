@@ -15,3 +15,10 @@ for (let i = 0; i < menuBtn.length; i++) {
     this.nextElementSibling.classList.toggle('active');
   });
 }
+
+// Display the load more spiner
+const loadMoreBtn = document.querySelector('[data-load-more]');
+
+loadMoreBtn.addEventListener('click', function () {
+  this.classList.toggle('active');
+});
