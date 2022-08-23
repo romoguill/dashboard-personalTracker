@@ -193,6 +193,80 @@ body {
   --bg: var(--black_12);
   --mb: 25px;
 }
+
+.section-title-wrapper {
+  padding-block: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.section-title {
+  color: var(--onyx);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--fs-9);
+  font-weight: var(--fw-600);
+  padding: 8px 16px;
+  border-radius: var(--radius-6);
+}
+
+.btn .icon {
+  font-size: 16px;
+}
+
+.btn-link {
+  color: var(--blue-ryb);
+}
+
+.btn-link:is(:hover, :focus) {
+  background-color: var(--blue-ryb_12);
+}
+
+.btn-primary {
+  color: var(--blue-ryb);
+  border: 1px solid var(--blue-ryb);
+  transition: var(--transition);
+}
+
+.btn-primary:is(:hover, :focus) {
+  background: var(--blue-ryb);
+  color: var(--white);
+  box-shadow: -10px 10px -8px var(--blue-ryb);
+}
+
+.card-badge {
+  background-color: var(--bg, var(--davys-gray_12));
+  color: var(--color, var(--davys-gray));
+  font-size: var(--fs-10);
+  font-weight: var(--fw-600);
+  width: max-content;
+  padding: 3px 8px;
+  border-radius: var(--radius-6);
+}
+
+.card-badge.blue {
+  --bg: var(--blue-ryb_12);
+  --color: var(--blue-ryb);
+}
+
+.card-badge.orange {
+  --bg: var(--coral_12);
+  --color: var(--coral);
+}
+
+.card-badge.cyan {
+  --bg: var(--pacific-blue_12);
+  --color: var(--pacific-blue);
+}
 /* HEADER */
 
 .header {
@@ -498,4 +572,69 @@ body {
 .revenue-item-text {
   color: var(--cool-gray);
   font-size: var(--fs-9);
+}
+
+/* PROJECTS */
+.project-list {
+  display: grid;
+  gap: 25px;
+}
+
+.project-card .card-date {
+  color: var(--cool-gray);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-500);
+  margin-bottom: 20px;
+}
+
+.project-card .card-title {
+  color: var(--onyx);
+  font-size: var(--fs-4);
+  margin-bottom: 8px;
+}
+
+.project-card .card-title > a {
+  color: inherit;
+  transition: var(--transition);
+}
+
+.project-card .card-title > a:is(:hover, :focus) {
+  color: var(--blue-ryb);
+}
+
+.project-card .card-badge {
+  margin-bottom: 20px;
+}
+
+.project-card .card-text {
+  color: var(--cool-gray);
+  font-size: var(--fs-7);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.project-card .progress-data {
+  color: var(--onyx);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-600);
+}
+
+.project-card .progress-bar {
+  margin-bottom: 10px;
+}
+
+.card-avatar-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-avatar-item > a {
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card-avatar-item:not(:first-child) {
+  margin-left: -15px;
 }
