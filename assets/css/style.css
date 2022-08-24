@@ -919,3 +919,19 @@ body {
     align-items: center;
   }
 }
+
+@media (min-width: 1200px) {
+  /* GENERAL */
+  .container {
+    max-width: 1150px;
+  }
+
+  .navbar-list {
+    gap: 25px;
+  }
+
+  /* HOME */
+  .card-price {
+    --fs-2: 1.7rem;
+  }
+}
