@@ -776,3 +776,146 @@ body {
 .copyright-link {
   color: inherit;
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 400px) {
+  /* HOME */
+  .revenue-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .revenue-item:first-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 570px) {
+  /* GENERAL */
+  .container {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+
+  /* HEADER */
+  .navbar-list,
+  .user-action-list {
+    padding-inline: 0;
+  }
+
+  /* HOME */
+  .card-price {
+    --fs-2: 1.625rem;
+  }
+
+  /* TASKS */
+  .tasks .card-meta-list {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  /* GENERAL */
+  .container {
+    max-width: 700px;
+  }
+
+  /* HONE */
+  .progress-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .progress-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .home .card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  /* GENERAL */
+  .container {
+    max-width: 950px;
+  }
+
+  .menu-toggle-btn {
+    display: none;
+  }
+
+  header {
+    padding-block: 10px;
+    height: unset;
+  }
+
+  .header.active {
+    height: unset;
+  }
+
+  .navbar {
+    all: unset;
+    flex-grow: 1;
+  }
+
+  .navbar .container {
+    display: flex;
+  }
+
+  .navbar-list {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-inline: auto;
+  }
+
+  .user-action-list {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* HOME */
+  .article.container {
+    padding-block: 35px;
+  }
+
+  .home {
+    grid-template-columns: 1.25fr 0.75fr 1fr;
+  }
+
+  .home .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-list {
+    align-items: flex-end;
+  }
+
+  /* PROJECTS */
+
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* TASKS */
+  .tasks .task-card {
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    align-items: center;
+  }
+
+  /* FOOTER */
+  .footer-list {
+    margin-bottom: 0;
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
